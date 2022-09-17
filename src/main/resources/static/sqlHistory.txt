@@ -1,0 +1,6 @@
+--20220917 파일 업로드 작성하며 컬럼 추가
+ALTER TABLE `board`.`board` 
+ADD COLUMN `filename` VARCHAR(150) NULL AFTER `title`,
+ADD COLUMN `filepath` VARCHAR(300) NULL AFTER `filename`,
+CHANGE COLUMN `content` `content` VARCHAR(255) NOT NULL ,
+CHANGE COLUMN `title` `title` VARCHAR(255) NOT NULL ;
