@@ -26,7 +26,7 @@ public class BoardController {
     public String boardWritePro(Board board){
         boardService.write(board);
         System.out.println("제목: " + board.getTitle() + "\n" + "내용: " + board.getContent());
-        return "";
+        return "redirect:/board/list";
     }
 
     @GetMapping("/board/list")
