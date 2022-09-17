@@ -25,7 +25,7 @@ public class BoardService {
         File saveFile = new File(projectPath, fileName);
         file.transferTo(saveFile);
         board.setFilename(fileName);
-        board.setFilepath("/files/" + fileName);
+        board.setFilepath("/files/"  + fileName);
 
         boardRepository.save(board);
     }
